@@ -1,0 +1,52 @@
+.flip {
+    height: 0;
+    padding-bottom: 14%;
+    padding-top: 11%;
+    width: 20%;
+    border: 1px solid black;
+    background: rgb(209, 1, 4);
+    color: white;
+
+}
+.flip:hover {
+
+    transition: 2s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip_right:hover{
+    transform: rotateY(360deg);
+    background: rgb(0, 12, 209);
+}
+
+.flip_left:hover{
+    transform: rotateY(-360deg);
+    background: rgb(0, 12, 209);
+}
+
+.flip_down:hover{
+    transform: rotateX(360deg);
+    background: rgb(0, 209, 0);
+}
+
+.flip_up:hover{
+    transform: rotateX(-360deg);
+    background: rgb(0, 209, 0);
+}
+
+.flip_spin_right:hover{
+    transform: rotateZ(360deg);
+    background: rgb(0, 209, 152);
+}
+
+.flip_spin_left:hover{
+    transform: rotateZ(-360deg);
+    background: rgb(0, 209, 152);
+}
+
+@media (max-width: 992px) {
+    .flip {
+        width: 100%;
+    }
+}
